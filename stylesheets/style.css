@@ -1,5 +1,5 @@
 @import "reset.css";
-
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900');
 @import "box.css";
 @import "menubar.css";
 @import "main.css"
