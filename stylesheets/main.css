@@ -37,8 +37,8 @@ img {
   top: -25vh;
   left: 50vw;
 }
-/*
-#follower{
+
+#follower {
   position : relative;
   background-color : yellow;
   width:15px;
@@ -61,4 +61,129 @@ img {
     left:0;
     overflow:hidden;
     border:1px solid #000000;
-}*/
+}
+
+
+
+
+.box2 {
+  position: relative;
+  width: 33vmin;
+  height: 33vmin;
+  background-color: #3C7A89;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  height: 25%;
+  width: 25%;
+  background-color: #DB5461;
+  border-radius: 50%;
+  transition: transform .5s ease-in-out;
+}
+
+.hover-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 2.5vmin solid transparent;
+    border-top: 0;
+    border-bottom: 2.5vmin solid #DB5461;
+    left: calc(50% - 2.5vmin);
+    top: calc(50% - 2.5vmin);
+  }
+}
+
+.hover-area--left {
+  transform: translateX(-100%);
+  &:before {
+    transform: rotate(-90deg);
+  }
+}
+
+.hover-area--top-left {
+  transform: translate(-100%, -100%);
+  &:before {
+    transform: rotate(-45deg);
+  }
+}
+
+.hover-area--top {
+  transform: translateY(-100%);
+}
+
+.hover-area--top-right {
+  transform: translate(100%, -100%);
+  &:before {
+    transform: rotate(45deg);
+  }
+}
+
+.hover-area--right {
+  transform: translateX(100%);
+  &:before {
+    transform: rotate(90deg);
+  }
+}
+
+.hover-area--bottom-right {
+  transform: translate(100%, 100%);
+  &:before {
+    transform: rotate(135deg);
+  }
+}
+
+.hover-area--bottom {
+  transform: translateY(100%);
+  &:before {
+    transform: rotate(180deg);
+  }
+}
+
+.hover-area--bottom-left {
+  transform: translate(-100%, 100%);
+  &:before {
+    transform: rotate(225deg);
+  }
+}
+
+.hover-area--left:hover ~ .circle {
+  transform: translateX(-150%);
+}
+
+.hover-area--top-left:hover ~ .circle {
+  transform: translateX(-150%) translateY(-150%);
+}
+
+.hover-area--top:hover ~ .circle {
+  transform: translateY(-150%);
+}
+
+.hover-area--top-right:hover ~ .circle {
+  transform: translateX(150%) translateY(-150%);
+}
+
+.hover-area--right:hover ~ .circle {
+  transform: translateX(150%);
+}
+
+.hover-area--bottom-right:hover ~ .circle {
+  transform: translateX(150%) translateY(150%);
+}
+
+.hover-area--bottom:hover ~ .circle {
+  transform: translateY(150%);
+}
+
+.hover-area--bottom-left:hover ~ .circle {
+  transform: translateX(-150%) translateY(150%);
+}

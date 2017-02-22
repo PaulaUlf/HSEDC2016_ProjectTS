@@ -1,3 +1,4 @@
+<script>
 (function() {
   var a, i, len, magicLine, ref,
     bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
@@ -50,3 +51,4 @@ window.CP.exitedLoop(1);
 
 
 }).call(this);
+</script>

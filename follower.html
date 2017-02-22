@@ -8,17 +8,31 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="javascripts/jquery-3.1.1.js"></script>
 
-    <script src="javascripts/menubar.js"></script>
-    <script src="javascripts/follower.js"></script>
+  <script type="text/javascript">
+    $('.container').mousemove(function(e){
+    $("#follower").show();
+      var offset = $('.container').offset();
+
+       mouseX = Math.min(e.pageX - offset.left, limitX);
+       mouseY = Math.min(e.pageY - offset.top, limitY);
+       if (mouseX < 0) mouseX = 0;
+       if (mouseY < 0) mouseY = 0;
+    });
+
+    $('.container').mouseleave(function() {
+            $("#follower").hide();
+    });
+
+    </script>
   </head>
 
   <body>
 
-<div class="centerdiv">
-<div class="container">
-        <div id="follower"></div>
-</div>
-</div>
+    <div class="centerdiv">
+    <div class="container">
+            <div id="follower"></div>
+    </div>
+    </div>
 
   </body>
 </html>
