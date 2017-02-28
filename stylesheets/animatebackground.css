@@ -22,7 +22,7 @@
 @keyframes stretch {
   0% {
     transform: scale(.3);
-    background-color: black;
+    background-color: #0F22FF;
     border-radius: 100%;
   }
   50% {
@@ -30,7 +30,7 @@
   }
   100% {
     transform: scale(1.5);
-    background-color: black;
+    background-color: #0F22FF;
   }
 }
 /*.element::after */

@@ -1,0 +1,30 @@
+body{
+  overflow: hidden;
+  margin: 0;
+  color: #fff;
+  font-family: 'Work Sans', sans-serif;
+}
+
+a {
+  position: absolute;
+  font-family: 'Work Sans', sans-serif;
+  /* margin-top: 6vh; */
+  color: white;
+  text-decoration: none;
+  margin: 0vh 5vw auto;
+  font-size: 6vw;
+  line-height: 40vh;
+  font-weight: bold;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/*canvas {
+  cursor: move;
+
+}*/
+canvas:hover {
+  cursor: move;
+  transition: all 3s ease-in-out;
+  transform: scale(2);
+}

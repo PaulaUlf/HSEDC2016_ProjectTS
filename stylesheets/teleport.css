@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-  background: radial-gradient(ellipse farthest-corner at center top, #000000, #0F22FF);
+  background: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@ body {
   position: relative;
   width: 70vh;
   height: 70vh;
-  background-color: blue;
+  background-color: black;
   display: flex;
   align-items: center;
   /*justify-content: center;*/
@@ -41,7 +41,7 @@ body {
 
 .cover-left,
 .cover-right {
-  background: green;
+  background: black;
   width: 20vh;
   height: 75%;
   /* left: 12vw; */
@@ -52,9 +52,10 @@ body {
 .cover-top,
 .cover-bottom {
   position: absolute;
-  background: blue;
+  background: black;
+  left: 0px;
   width: 100%;
-  height: 10vh;
+  height: 15vh;
   z-index: 2;
 }
 
@@ -75,21 +76,22 @@ body {
 }
 .hover-area {
   position: absolute;
-  background: blue;
+  background: black;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
 
   &:before {
-    content: '';
+    content: ""
     display: block;
     position: absolute;
     border: 2.5vmin solid transparent;
     border-top: 0;
-    border-bottom: 2.5vmin solid #DB5461;
+    border-bottom: 2.5vmin solid white;
     left: calc(50% - 2.5vmin);
     top: calc(50% - 2.5vmin);
+    z-index: 2;
   }
 }
 
