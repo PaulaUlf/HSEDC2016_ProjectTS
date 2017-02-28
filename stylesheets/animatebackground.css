@@ -3,7 +3,7 @@
   cursor: pointer;
   height: 25vh;
   width: 25vh;
-  margin: 0 auto;
+  margin: 21vh auto;
   background-color: red;
   animation-name: stretch;
   animation-duration: 1.5s;
@@ -37,8 +37,8 @@
 
 .morphing-circle-square {
   display: none;
-    cursor: pointer;
-  margin: 0 auto;
+  cursor: pointer;
+  margin: 21vh auto;
 	height: 25vh;
   width: 25vh;
   background-color: blue;

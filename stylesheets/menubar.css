@@ -17,7 +17,7 @@
   position: relative;
   z-index: 1;
 }
-.menu a {
+.menu .menu-item a {
   display: block;
   color: inherit;
   text-decoration: none;
@@ -47,5 +47,51 @@
   transition: 0.5s linear;
 }
 .transition-translate:hover {
-  top: 50px;
+  top: 30px;
 }
+
+
+.menu1 li:nth-child(1),
+.menu1 li:nth-child(2),
+.menu1 li:nth-child(3),
+.menu1 li:nth-child(4) {
+  background: black;
+  color: white;
+  font-size: 0.72em;
+}
+.menu1 li:nth-child(2) {
+  opacity: 0.7;
+}
+.menu1 li:nth-child(3) {
+  opacity: 0.5;
+}
+.menu1 li:nth-child(4) {
+  opacity: 0.3;
+}
+
+
+ul.menu1 {
+position: absolute;
+display: none;
+margin-left: 0em;
+margin-top: 5px;
+}
+
+small a {
+    display: block; /* Ссылка как блочный элемент */
+    padding: 5px; /* Поля вокруг надписи */
+    text-decoration: underline; /* Подчеркивание у ссылок убираем */
+    color: black; /* Цвет текста */
+   }
+
+   .small a:hover {
+    color: #ffe; /* Цвет текста активного пункта */
+    background-color: none; /* Цвет фона активного пункта */
+
+   }
+   li:hover ul {
+    display: block; /* При выделении пункта курсором мыши отображается подменю */
+   }
+   .brd {
+    border-bottom: 1px solid #ccc; /* Линия снизу */
+   }

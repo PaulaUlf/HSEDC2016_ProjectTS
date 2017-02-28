@@ -17,6 +17,7 @@ a {
   font-weight: bold;
   z-index: 1;
   cursor: pointer;
+  text-shadow: 5px 5px 30px black;
 }
 
 /*canvas {
@@ -27,4 +28,5 @@ canvas:hover {
   cursor: move;
   transition: all 3s ease-in-out;
   transform: scale(2);
+  transition-timing-function: ease-in-out;
 }

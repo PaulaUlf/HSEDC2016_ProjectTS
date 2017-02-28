@@ -25,7 +25,7 @@ var material = new THREE.ShaderMaterial({
 var colors = new Float32Array(sphere.attributes.position.array.length);
 for(var i=0;i<sphere.attributes.position.array.length;i+=3){
   var perlin = Math.abs(noise.simplex3(sphere.attributes.position.array[i]*0.01, sphere.attributes.position.array[i+1]*0.01, sphere.attributes.position.array[i+2]*0.01));
-  var color = new THREE.Vector3(perlin, 0.5, 0.8);
+  var color = new THREE.Vector3(perlin, 0.2,0.3);
   color.toArray(colors, i);
 }
 sphere.addAttribute( 'color', new THREE.BufferAttribute( colors, 3 ) );
