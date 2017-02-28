@@ -34,3 +34,32 @@
   }
 }
 /*.element::after */
+
+.morphing-circle-square {
+  display: none;
+    cursor: pointer;
+  margin: 0 auto;
+	height: 25vh;
+  width: 25vh;
+  background-color: blue;
+	animation: morphing-circle-square 3s linear infinite;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.hover-area--left:hover .morphing-circle-square {
+  display: block;
+}
+
+@keyframes morphing-circle-square {
+	0% { border-radius: 50%; }
+	25% { border-radius: 50%;  background-color: #DB5461; }
+	50% { border-radius: 0%; background-color: #F7FFF7; transform: rotate(0deg)}
+	75% { border-radius: 0%; background-color: #F7FFF7; transform: rotate(90deg); }
+	100% { border-radius: 50%; background-color: #DB5461; transform: rotate(90deg); }
+}
