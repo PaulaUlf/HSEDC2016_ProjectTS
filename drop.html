@@ -1,41 +1,81 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>drop</title>
+  <link rel="icon" type="images/png" href="images/favicon1.png">
+
 <style>
-#div1, #div2 {
-  background-image: url(images/T.svg);
-    float: left;
-    width: 100px;
-    height: 35px;
-    margin: 35px;
-    padding: 50px;
-    border: 5px solid black;
-}
+  html {
+    background: radial-gradient(ellipse farthest-corner at center top, #0F22FF, #000000);
+    height: 100%;
+    overflow: hidden;
+  }
+  .drop {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+
+  #div1 {
+    background-image: url(images/T.svg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 50vh;
+    background-position: calc(100% - 90px) 0px;
+  }
+
+  #div2 {
+    background-image: url(images/S.svg);
+    background-repeat: no-repeat;
+    margin: 70vh auto;
+    padding: 50vh;
+    background-position: calc(100% - 90px) 0px;
+  }
+
+  #div1, #div2 {
+    position: relative;
+    display: inline-flex;
+    align-content: center;
+    min-width: 15vh;
+    height: 35vh;
+    min-width: calc();
+    margin: auto;
+  }
+
+  #div1:hover,
+  #div2:hover {
+    outline: .5em solid blue
+  }
+
 </style>
-<script>
-function allowDrop(ev) {
+
+</head>
+<body>
+  <script>
+  function allowDrop(ev) {
     ev.preventDefault();
-}
+  }
 
-function drag(ev) {
+  function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
-}
+  }
 
-function drop(ev) {
+  function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
-}
-</script>
-</head>
-<body>
+  }
+  </script>
 
+<div class="drop">
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="images/box.svg" draggable="true" ondragstart="drag(event)" id="drag1" width="100" height="50">
+    </div>
 
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <img src="images/box.svg" draggable="true" ondragstart="drag(event)" id="drag1" width="100" height="50">
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 </div>
-
-<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
 </body>
 </html>
