@@ -55,7 +55,7 @@
 .menu1 li:nth-child(2),
 .menu1 li:nth-child(3),
 .menu1 li:nth-child(4) {
-  background: black;
+  background: #1F1E84;
   color: white;
   font-size: 0.72em;
 }
@@ -73,8 +73,8 @@
 ul.menu1 {
 position: absolute;
 display: none;
-margin-left: 0em;
-margin-top: 5px;
+margin-left: -13.5em;
+margin-top: -2.7em;
 }
 
 small a {
