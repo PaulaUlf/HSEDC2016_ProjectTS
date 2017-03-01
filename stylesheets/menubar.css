@@ -2,7 +2,8 @@
   position: relative;
   top: 5%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   /*box-shadow: 0 0em 1em rgba(0, 0, 0, 0.5);*/
   text-transform: uppercase;
   text-align: center;
@@ -11,6 +12,8 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 .menu .menu-item {
@@ -44,6 +47,7 @@
   max-width: 500px;
   font-size: 20px;
   cursor: pointer;
+  -webkit-transition: 0.5s linear;
   transition: 0.5s linear;
 }
 .transition-translate:hover {

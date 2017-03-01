@@ -26,7 +26,10 @@ a {
 }*/
 canvas:hover {
   cursor: move;
+  -webkit-transition: all 3s ease-in-out;
   transition: all 3s ease-in-out;
-  transform: scale(2);
-  transition-timing-function: ease-in-out;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }

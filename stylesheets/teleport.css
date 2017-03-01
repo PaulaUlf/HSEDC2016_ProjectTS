@@ -8,9 +8,15 @@ html, body {
 
 body {
   background: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
 }
 
@@ -19,8 +25,12 @@ body {
   width: 70vh;
   height: 70vh;
   background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /*justify-content: center;*/
 }
 
@@ -28,14 +38,21 @@ body {
   position: relative;
   height: 5%;
   width: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
       left: -6vh;
   /*background-image: url(../images/man.svg);
     background-repeat: no-repeat;*/
   background-color: white;
   border-radius: 50%;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
   z-index: 0;
 }
 
@@ -85,7 +102,7 @@ body {
   height: 100%;
 
   &:before {
-    content: ""
+    content: "";
     display: block;
     position: absolute;
     border: 2.5vmin solid transparent;
@@ -98,86 +115,109 @@ body {
 }
 
 .hover-area--left {
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   &:before {
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
   }
 }
 
 .hover-area--top-left {
-  transform: translate(-100%, -100%);
+  -webkit-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
   &:before {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
 }
 
 .hover-area--top {
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .hover-area--top-right {
-  transform: translate(100%, -100%);
+  -webkit-transform: translate(100%, -100%);
+          transform: translate(100%, -100%);
   &:before {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
 }
 
 .hover-area--right {
-  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   &:before {
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
 
 .hover-area--bottom-right {
-  transform: translate(100%, 100%);
+  -webkit-transform: translate(100%, 100%);
+          transform: translate(100%, 100%);
   &:before {
-    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
   }
 }
 
 .hover-area--bottom {
-  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   &:before {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 }
 
 .hover-area--bottom-left {
-  transform: translate(-100%, 100%);
+  -webkit-transform: translate(-100%, 100%);
+          transform: translate(-100%, 100%);
   &:before {
-    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
   }
 }
 
 .hover-area--left:hover ~ .circle {
-  transform: translateX(-2000%);
+  -webkit-transform: translateX(-2000%);
+          transform: translateX(-2000%);
 }
 
 .hover-area--top-left:hover ~ .circle {
-  transform: translateX(-1000%) translateY(-1000%);
+  -webkit-transform: translateX(-1000%) translateY(-1000%);
+          transform: translateX(-1000%) translateY(-1000%);
 }
 
 .hover-area--top:hover ~ .circle {
-  transform: translateY(-1000%);
+  -webkit-transform: translateY(-1000%);
+          transform: translateY(-1000%);
 }
 
 .hover-area--top-right:hover ~ .circle {
-  transform: translateX(1000%) translateY(-1000%);
+  -webkit-transform: translateX(1000%) translateY(-1000%);
+          transform: translateX(1000%) translateY(-1000%);
 }
 
 .hover-area--right:hover ~ .circle {
-  transform: translateX(2000%);
+  -webkit-transform: translateX(2000%);
+          transform: translateX(2000%);
 }
 
 .hover-area--bottom-right:hover ~ .circle {
-  transform: translateX(1000%) translateY(1000%);
+  -webkit-transform: translateX(1000%) translateY(1000%);
+          transform: translateX(1000%) translateY(1000%);
 }
 
 .hover-area--bottom:hover ~ .circle {
-  transform: translateY(1000%);
+  -webkit-transform: translateY(1000%);
+          transform: translateY(1000%);
 }
 
 .hover-area--bottom-left:hover ~ .circle {
-  transform: translateX(-1000%) translateY(1000%);
+  -webkit-transform: translateX(-1000%) translateY(1000%);
+          transform: translateX(-1000%) translateY(1000%);
 }

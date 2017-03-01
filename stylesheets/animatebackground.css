@@ -5,23 +5,32 @@
   width: 25vh;
   margin: 21vh auto;
   background-color: red;
-  animation-name: stretch;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running;
+  -webkit-animation-name: stretch;
+          animation-name: stretch;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 .hover-area--right:hover .element {
   display: block;
 }
 
-@keyframes stretch {
+@-webkit-keyframes stretch {
   0% {
-    transform: scale(2);
+    -webkit-transform: scale(2);
+            transform: scale(2);
     background-color: #0F22FF;
     border-radius: 100%;
   }
@@ -29,7 +38,25 @@
     background-color: white;
   }
   100% {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    background-color: #0F22FF;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    background-color: #0F22FF;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
     background-color: #0F22FF;
   }
 }
@@ -42,24 +69,33 @@
 	height: 25vh;
   width: 25vh;
   background-color: blue;
-	animation: morphing-circle-square 3s linear infinite;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running;
+	-webkit-animation: morphing-circle-square 3s linear infinite;
+	        animation: morphing-circle-square 3s linear infinite;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 .hover-area--left:hover .morphing-circle-square {
   display: block;
 }
 
-@keyframes morphing-circle-square {
+@-webkit-keyframes morphing-circle-square {
 	0% {
     border-radius: 50%;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 
 	25% {
@@ -69,19 +105,57 @@
 	50% {
     border-radius: 0%;
     background-color: #F7FFF7;
-    transform: rotate(0deg);
-    transform: scale(2);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
 	75% {
     border-radius: 0%;
     background-color: #F7FFF7;
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 
 	100% {
     border-radius: 50%;
     background-color: #DB5461;
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+@keyframes morphing-circle-square {
+	0% {
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+	25% {
+    border-radius: 50%;
+    background-color: #DB5461;
+  }
+	50% {
+    border-radius: 0%;
+    background-color: #F7FFF7;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+	75% {
+    border-radius: 0%;
+    background-color: #F7FFF7;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+
+	100% {
+    border-radius: 50%;
+    background-color: #DB5461;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
 
@@ -93,38 +167,76 @@
   width: 25vh;
   margin: 65vh auto;
   background-color: red;
-  animation-name: running;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running;
+  -webkit-animation-name: running;
+          animation-name: running;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 .hover-area--top:hover .element1 {
   display: block;
 }
 
-@keyframes running {
+@-webkit-keyframes running {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     background-color: #0F22FF;
     border-radius: 100%;
   }
   50% {
     background-color: white;
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
   75% {
   border-radius: 50%;
-  transform: translateY(-2vh);
+  -webkit-transform: translateY(-2vh);
+          transform: translateY(-2vh);
 
   }
 
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #0F22FF;
+  }
+}
+
+@keyframes running {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: #0F22FF;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: white;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  75% {
+  border-radius: 50%;
+  -webkit-transform: translateY(-2vh);
+          transform: translateY(-2vh);
+
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
     background-color: #0F22FF;
   }
 }
@@ -134,34 +246,44 @@
   cursor: pointer;
   height: 5vh;
   width: 25vh;
-  margin: 0vh 24vh auto;
+  margin: 0vh 23vh auto;
   background-color: #0F22FF;
-  animation-name: jumping;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-  animation-play-state: running;
+  -webkit-animation-name: jumping;
+          animation-name: jumping;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 .hover-area--bottom:hover .element3 {
   display: block;
 }
 
-@keyframes jumping {
+@-webkit-keyframes jumping {
   0% {
     /*background-color: #0F22FF;*/
     border-radius: 100%;
   }
   25% {
     background-color: white;
-transform: scale(1.5);
+-webkit-transform: scale(1.5);
+        transform: scale(1.5);
   }
 
   50% {
-  transform: translateY(2vh);
+  -webkit-transform: translateY(2vh);
+          transform: translateY(2vh);
     background-color: white;
   }
   75%{
@@ -171,6 +293,35 @@ transform: scale(1.5);
   100% {
     border-radius: 0%;
     background-color: #DB5461;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes jumping {
+  0% {
+    /*background-color: #0F22FF;*/
+    border-radius: 100%;
+  }
+  25% {
+    background-color: white;
+-webkit-transform: scale(1.5);
+        transform: scale(1.5);
+  }
+
+  50% {
+  -webkit-transform: translateY(2vh);
+          transform: translateY(2vh);
+    background-color: white;
+  }
+  75%{
+    background-color: #0F22FF;
+  }
+
+  100% {
+    border-radius: 0%;
+    background-color: #DB5461;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
