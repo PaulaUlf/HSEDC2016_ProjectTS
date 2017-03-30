@@ -209,3 +209,20 @@ img {
   width: 8vh;
   border-radius: 50%;
 }
+
+
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 100vw;
+    height: 827px;
+}
+
+iframe {
+    /*width: 62.5vw;*/
+    border: 10px solid white;
+}
